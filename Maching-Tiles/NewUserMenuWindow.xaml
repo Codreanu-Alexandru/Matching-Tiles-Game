@@ -1,0 +1,77 @@
+﻿<Window x:Class="Maching_Tiles.NewUserMenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Maching_Tiles"
+        mc:Ignorable="d"
+        Title="NewUserMenuWindow" Height="450" Width="800" MinHeight="450" MinWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox
+            x:Name="UsernameInput"
+            TextWrapping="NoWrap" 
+            Text="" FontSize="36" TextAlignment="Left"
+            Width="auto" Height="auto"
+            Grid.Column="0" Grid.Row="1"
+            Grid.ColumnSpan="2"/>
+        <PasswordBox
+            x:Name="PasswordInput"
+            FontSize="36"
+            Width="auto" Height="auto"
+            Grid.Column="0" Grid.Row="3"
+            Grid.ColumnSpan="2"/>
+        <Image
+            Height="auto" Width="auto"
+            Grid.Column="2" Grid.Row="0"
+            Grid.ColumnSpan="2" Grid.RowSpan="4"
+            x:Name="ImageControl"/>
+        <Button 
+            Content="Previous"
+            Height="auto" Width="auto"
+            Grid.Column="2" Grid.Row="4"
+            Cursor="Hand"
+            Click="PreviousButton"/>
+        <Button 
+            Content="Next"
+            Height="auto" Width="auto"
+            Grid.Column="3" Grid.Row="4"
+            Cursor="Hand"
+            Click="NextButton"/>
+        <Button 
+            Content="Confirm"
+            Height="auto" Width="auto"
+            Grid.Column="0" Grid.Row="4"
+            Grid.ColumnSpan="2"
+            Cursor="Hand"
+            Click="ConfirmButton"/>
+        <Button 
+            Content="Exit"
+            Height="auto" Width="auto"
+            Grid.Column="0" Grid.Row="5"
+            Grid.ColumnSpan="4"
+            Cursor="Hand"
+            Click="ExitButton"/>
+        <TextBlock
+            Text="Username :" FontSize="36" TextAlignment="Left"
+            Grid.Column="0" Grid.Row="0"
+            Grid.ColumnSpan="2"/>
+        <TextBlock
+            Text="Password :" FontSize="36" TextAlignment="Left"
+            Grid.Column="0" Grid.Row="2"
+            Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
